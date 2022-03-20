@@ -1,11 +1,9 @@
 import './Footer.css';
 
-function Header() {
+export default function Footer() {
   return (
-    <div className='Footer'>
+    <footer className='Footer'>
       <small> &#169; Vadi development. All rights reserved. </small>
-    </div>
+    </footer>
   );
 }
-
-export default Header;
