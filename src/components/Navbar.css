@@ -1,6 +1,6 @@
 .nav {
   padding: 1.75rem 2rem;
-  background-color: #21222A;
+  background-color: #21222a;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,19 +16,14 @@
   height: 30px;
 }
 
-.logo-txt{
-  font-family: 'Inter';
-  font-style: normal;
+.logo-txt {
   font-weight: 700;
   font-size: 1.5rem;
-  color: #61DAFB;
+  color: #61dafb;
 }
 
-.project-txt{
-  font-family: 'Inter';
-  font-style: normal;
+.project-txt {
   font-weight: 600;
   text-align: right;
-  color: #DEEBF8;
-
+  color: #deebf8;
 }
