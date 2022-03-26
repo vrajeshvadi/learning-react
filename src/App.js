@@ -1,9 +1,9 @@
-import Important from "./components/Important";
+import AddItem from "./components/AddItem";
 
 export default function App() {
   return (
     <div>
-      <Important />
+      <AddItem />
     </div>
   );
 }
