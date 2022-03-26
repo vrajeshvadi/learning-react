@@ -1,19 +1,28 @@
 import React from 'react';
+import { ReactComponent as Minus } from './minus_solid.svg';
+import { ReactComponent as Plus } from './plus_solid.svg';
 
 export default function Important() {
-  const [ans, setAns] = React.useState(true);
-  function toggle() {
-    setAns((prev) => (prev = !prev));
+  const [count, setCount] = React.useState(0);
+
+  function add() {
+    setCount((prev) => prev + 1);
   }
-  let yesNo = ans ? 'Yes' : 'No';
+
+  function substract() {
+    setCount((prev) => prev - 1);
+  }
+
   return (
-    <div className='h-[100vh] bg-black flex flex-col justify-center items-center'>
-      <h1 className='text-white text-2xl font-bold m-4'>Is state important to know?</h1>
-      <div
-        className='bg-white  text-lg font-semibold p-8 m-4 rounded-full cursor-pointer'
-        onClick={toggle}
-      >
-        {yesNo}
+    <div className='h-[100vh] bg-dark-primary flex justify-center items-center'>
+      <div className='w-8 h-8 flex items-center justify-center bg-dark-secondary text-white rounded-full cursor-pointer' onClick={substract}>
+        <Minus width='1rem' fill='currentColor' />
+      </div>
+      <div className='w-16 h-16 bg-dark-surface text-dark-text text-lg font-semibold m-4 rounded-full flex items-center justify-center'>
+        {count}
+      </div>
+      <div className='w-8 h-8 flex items-center justify-center bg-dark-secondary text-white rounded-full cursor-pointer' onClick={add}>
+        <Plus width={'1rem'} fill='currentColor' />
       </div>
     </div>
   );
