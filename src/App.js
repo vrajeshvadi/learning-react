@@ -1,9 +1,9 @@
-import AddItem from "./components/AddItem";
+import Card from "./components/Card";
 
 export default function App() {
   return (
     <div>
-      <AddItem />
+      <Card />
     </div>
   );
 }
